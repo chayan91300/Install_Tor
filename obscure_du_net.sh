@@ -33,7 +33,8 @@ cd tor-browser_fr/ > /dev/null 2>&1
     
 # Bug root
 if [ "$(id -u)" -eq 0 ]; then
-           sed -i -e 's/-eq 0/-eq 1000/' /root/Downloads/tor-browser_fr/Browser/start-tor-browser 
+           sed -i -e 's/-eq 0/-eq 1000/' /root/Downloads/tor-browser_fr/Browser/start-tor-browser
+           sed -i -e 's/-eq 0/-eq 1000/' /root/Téléchargements/tor-browser_fr/Browser/start-tor-browser
 fi
 
 clear
