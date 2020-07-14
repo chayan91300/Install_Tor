@@ -18,8 +18,7 @@ cd /home/"$utilisateur"/Documents/TOR/ > /dev/null 2>&1
 
 lynx -dump https://dist.torproject.org/torbrowser | sed "13 q"
 echo ""
-read -p "Quelle version de tor voulez-vous ? (exemple 9.0.1) : " versiontor
-
+read -p "Quelle version de tor voulez-vous ? (exemple : [9.0.5], [10.0a3]...) : " versionto
 # Téléchargement de tor
 wget https://dist.torproject.org/torbrowser/"$versiontor"/tor-browser-linux64-"$versiontor"_fr.tar.xz
     
